@@ -1,0 +1,38 @@
+body {
+    background-color: navy;
+    margin: 0;
+}
+
+.quote-container {
+    height: 100vh;
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+    color: #fff;
+    font-family: 'Franklin Gothic Medium', Arial, sans-serif;
+}
+
+.quote {
+    margin: .5rem;
+    flex-basis: 100%;
+    justify-self: center;
+    align-self: center;
+    font-size: 4rem;
+    text-shadow: 1px 1px 0px #ccc, -2px -2px 2px #000;
+}
+
+.quote-caption {
+    flex-basis: 100%;
+    text-align: right;
+    font-size: 1.2rem;
+}
+
+@media only screen and (max-width: 720px) {
+    .quote {
+        flex-basis: max-content;
+    }
+}
